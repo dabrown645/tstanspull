@@ -13,8 +13,13 @@
     - debug:
         msg: "I'm in group 'onlybar'"
 
-- name: configure ansible-pull
-  hosts: all
-  roles:
-    - role: ansible-pull
-      ansible_pull_url: https://git.example.com/ansible.git
+- hosts: popos
+  tasks:
+    - debug:
+        msg: "I'm in group 'popos'"
+
+          #- name: configure ansible-pull
+          #  hosts: all
+          #  roles:
+          #    - role: ansible-pull
+          #      ansible_pull_url: https://git.example.com/ansible.git
