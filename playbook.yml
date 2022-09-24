@@ -18,6 +18,11 @@
     - debug:
         msg: "I'm in group 'onlypopos'"
 
+- hosts: onlygaruda
+  tasks:
+    - debug:
+        msg: "I'm in group 'onlygaruda'"
+
 - name: configure ansible-pull
   hosts: all
   roles:
